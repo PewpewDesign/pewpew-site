@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pew Pew — Product design, brought to life</title>
+  <meta name="description" content="Pew Pew Oy is a product design practice. We join your development team and take the product from requirements to finished design, one sprint ahead.">
+  <meta name="theme-color" content="#0f0f0e">
+  <meta property="og:title" content="Pew Pew — Product design, brought to life">
+  <meta property="og:description" content="We join your development team and take the product from requirements to finished design, one sprint ahead.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pewpew.design/">
+  <link rel="canonical" href="https://pewpew.design/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <canvas id="field" aria-hidden="true"></canvas>
+
+  <header class="top">
+    <a class="top__mark" href="#top" aria-label="Pew Pew, back to top">
+      <svg viewBox="0 0 687 119" role="img" aria-hidden="true" focusable="false"><use href="#logo"/></svg>
+    </a>
+    <a class="top__hello" href="#hello">Say hello</a>
+  </header>
+
+  <main id="top">
+    <section class="panel panel--hero">
+      <h1 class="hero__logo">
+        <svg viewBox="0 0 687 119" role="img" aria-label="Pew Pew">
+          <g id="logo" fill="currentColor">
+            <path d="M333.091 2.4707L293.105 82.6765L264.19 83.7152L262.372 51.3868L245.936 84.4571L213.794 85.6446L209.333 2.4707H242.214V41.0107L258.572 2.4707H284.513L284.678 41.0107L300.871 2.4707H333.091Z"/>
+            <path d="M159.294 0C179.287 0 195.315 13.1761 199.115 32.2814L154.337 58.9629C156.981 60.1158 160.121 60.6099 163.59 60.6099C172.843 60.6099 184.079 56.6571 189.201 51.5513L182.592 82.5151C176.809 86.1385 168.382 88.1149 159.129 88.1149C132.692 88.1149 115.178 71.6448 115.178 46.4456C115.178 20.0935 134.51 0 159.294 0ZM157.807 25.0345C149.711 25.0345 143.928 31.7873 143.928 41.3399L165.904 28.1638C164.086 26.1874 161.277 25.0345 157.807 25.0345Z"/>
+            <path d="M107.565 38.8694C107.565 65.8803 88.3986 88.1149 62.7878 88.1149C54.5263 88.1149 47.0909 85.8091 42.2992 82.1857H41.8035L34.0376 117.175L0 118.585L24.7847 2.47052H55.5177L55.3524 6.58803H56.0133C59.6484 2.47052 66.0924 0 73.8583 0C93.1903 0 107.565 15.3172 107.565 38.8694ZM77.3282 42.4928C77.3282 33.9284 72.0408 28.1638 63.7792 28.1638C54.1958 28.1638 47.0909 35.7401 47.0909 45.6221C47.0909 54.1866 52.3783 59.9511 60.6398 59.9511C70.058 59.9511 77.3282 52.3749 77.3282 42.4928Z"/>
+            <path d="M687 2.88574L647.014 83.0916L618.099 84.1302L616.281 51.8019L599.845 84.8721L567.703 86.0596L563.242 2.88574H596.123V41.4257L612.481 2.88574H638.422L638.588 41.4257L654.78 2.88574H687Z"/>
+            <path d="M513.204 0.415039C533.197 0.415039 549.224 13.5911 553.024 32.6964L508.247 59.3779C510.89 60.5308 514.03 61.0249 517.5 61.0249C526.753 61.0249 537.988 57.0721 543.11 51.9664L536.501 82.9301C530.718 86.5535 522.291 88.53 513.038 88.53C486.601 88.53 469.087 72.0599 469.087 46.8607C469.087 20.5085 488.419 0.415039 513.204 0.415039ZM511.717 25.4496C503.62 25.4496 497.837 32.2023 497.837 41.7549L519.813 28.5789C517.995 26.6025 515.186 25.4496 511.717 25.4496Z"/>
+            <path d="M461.475 39.2844C461.475 66.2953 442.308 88.53 416.697 88.53C408.435 88.53 401 86.2241 396.208 82.6007H395.713L387.947 117.59L353.909 119L378.694 2.88556H409.427L409.262 7.00307H409.923C413.558 2.88556 420.002 0.415039 427.767 0.415039C447.1 0.415039 461.475 15.7322 461.475 39.2844ZM431.237 42.9078C431.237 34.3434 425.95 28.5789 417.688 28.5789C408.105 28.5789 401 36.1551 401 46.0372C401 54.6016 406.287 60.3661 414.549 60.3661C423.967 60.3661 431.237 52.7899 431.237 42.9078Z"/>
+          </g>
+        </svg>
+      </h1>
+      <p class="hero__line">We bring product design to life.</p>
+      <p class="hero__sub">A product design practice.</p>
+      <span class="hero__cue" aria-hidden="true"></span>
+    </section>
+
+    <section class="panel" aria-labelledby="s-team">
+      <p class="eyebrow reveal">What we do</p>
+      <h2 id="s-team" class="reveal">We join your team.</h2>
+      <p class="lede reveal">We work inside your development team, not beside it. Same stand-ups, same backlog, same goals. One team at a time, for as long as the product needs us.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="s-sprint">
+      <p class="eyebrow reveal">How we work</p>
+      <h2 id="s-sprint" class="reveal">One sprint ahead.</h2>
+      <p class="lede reveal">We take the product from first requirements to finished, build-ready design. While the team builds this sprint, we design the next one, so developers always have what they need.</p>
+    </section>
+
+    <section class="panel panel--hello" id="hello" aria-labelledby="s-hello">
+      <p class="eyebrow reveal">Contact</p>
+      <h2 id="s-hello" class="reveal">Say hello.</h2>
+      <p class="lede reveal"><a class="mail" href="mailto:hello@pewpew.design">hello@pewpew.design</a></p>
+      <p class="note reveal">We work in English and Swedish.</p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Pew Pew Oy <span class="dot">·</span> Business ID 3413064-7</p>
+    <p><a href="https://docs.google.com/presentation/d/1uYUHxRFDVYrjo-SCAGSWsg4fufKAQEcDToNo4VdVklU/preview" target="_blank" rel="noopener">Portfolio</a> <span class="dot">·</span> © 2026</p>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
