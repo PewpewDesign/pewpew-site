@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pew Pew — Product design, brought to life</title>
-  <meta name="description" content="Pew Pew Oy is a product design practice. We join your development team and take the product from requirements to finished design, one sprint ahead.">
+  <meta name="description" content="Pew Pew Oy is a product design practice. We join your development team and take the product from requirements to finished design.">
   <meta name="theme-color" content="#0f0f0e">
   <meta property="og:title" content="Pew Pew — Product design, brought to life">
-  <meta property="og:description" content="We join your development team and take the product from requirements to finished design, one sprint ahead.">
+  <meta property="og:description" content="We join your development team and take the product from requirements to finished design.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pewpew.design/">
   <link rel="canonical" href="https://pewpew.design/">
@@ -39,21 +39,25 @@
           </g>
         </svg>
       </h1>
-      <p class="hero__line">We bring product design to life.</p>
-      <p class="hero__sub">A product design practice.</p>
+      <p class="hero__line">Bringing product design to life</p>
+      <p class="hero__sub">A design practice from the Nordics</p>
       <span class="hero__cue" aria-hidden="true"></span>
     </section>
 
     <section class="panel" aria-labelledby="s-team">
       <p class="eyebrow reveal">What we do</p>
       <h2 id="s-team" class="reveal">We join your team.</h2>
-      <p class="lede reveal">We work inside your development team, not beside it. Same stand-ups, same backlog, same goals. One team at a time, for as long as the product needs us.</p>
+      <p class="lede reveal">Good product work comes from alignment. We sit in your stand-ups, work from your backlog and ship on your schedule. After a few weeks, nobody remembers we came from outside.</p>
+      <div class="bears reveal" hidden><!-- bears hidden for now: remove "hidden" here and un-comment bears.js at the bottom to bring them back -->
+        <canvas id="bears" class="bears__canvas" aria-label="Three low-poly bears. Tap to make them dance in sync."></canvas>
+        <p class="eyebrow bears__hint" id="bears-hint">Tap for a dance move</p>
+      </div>
     </section>
 
     <section class="panel" aria-labelledby="s-sprint">
       <p class="eyebrow reveal">How we work</p>
-      <h2 id="s-sprint" class="reveal">One sprint ahead.</h2>
-      <p class="lede reveal">We take the product from first requirements to finished, build-ready design. While the team builds this sprint, we design the next one, so developers always have what they need.</p>
+      <h2 id="s-sprint" class="reveal">Start to finish.</h2>
+      <p class="lede reveal">We take the product from first requirements to build-ready design, and make sure the development team has what it needs along the way.</p>
     </section>
 
     <section class="panel panel--hello" id="hello" aria-labelledby="s-hello">
@@ -62,13 +66,24 @@
       <p class="lede reveal"><a class="mail" href="mailto:hello@pewpew.design">hello@pewpew.design</a></p>
       <p class="note reveal">We work in English and Swedish.</p>
     </section>
+
+    <section class="panel panel--play" id="play" aria-label="Portfolio">
+      <canvas id="banana" class="play__canvas" aria-label="A banana held like a space gun. Tap anywhere to fire."></canvas>
+      <div class="play__text">
+        <p class="eyebrow reveal" id="banana-hint">Tap anywhere</p>
+        <p class="play__cta reveal">
+          <a class="cta" id="portfolio-cta" href="https://docs.google.com/presentation/d/1uYUHxRFDVYrjo-SCAGSWsg4fufKAQEcDToNo4VdVklU/preview" rel="noopener">Portfolio<svg class="cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5h11v11M19 5 5 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg><span class="sr-only"> (external link)</span></a>
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer class="foot">
-    <p>Pew Pew Oy <span class="dot">·</span> Business ID 3413064-7</p>
-    <p><a href="https://docs.google.com/presentation/d/1uYUHxRFDVYrjo-SCAGSWsg4fufKAQEcDToNo4VdVklU/preview" target="_blank" rel="noopener">Portfolio</a> <span class="dot">·</span> © 2026</p>
+    <p><span class="foot__part">Pew Pew Oy <span class="dot">·</span> Business ID 3413064-7</span> <span class="dot foot__join">·</span> <span class="foot__part">Helsinki <span class="dot">·</span> © 2026</span></p>
   </footer>
 
   <script src="main.js" defer></script>
+  <!-- <script type="module" src="bears.js"></script> -->
+  <script type="module" src="banana.js"></script>
 </body>
 </html>
