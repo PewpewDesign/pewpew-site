@@ -293,9 +293,9 @@ function resize() {
   if (!w || !h) return;
   renderer.setSize(w, h, false);
   camera.aspect = w / h;
-  camera.position.z = camera.aspect < 1 ? 9 + (1 - camera.aspect) * 7 : 9;   // step back on tall phones
+  camera.position.z = camera.aspect < 1 ? 9 + (1 - camera.aspect) * 7 : 9 + Math.min(1.5, (camera.aspect - 1) * 2);   // step back on tall phones, and a little on wide screens so the banana clears the text
   if (camera.aspect < 1) basePos.set(0.3, 0.7, 1.5);    // phone: banana in the upper part, text below
-  else basePos.set(1.6, 0.1, 1.5);                      // wide: banana to the right, text on the left
+  else basePos.set(0, 0.85, 1.5);                       // wide: banana centred above the centred text
   camera.updateProjectionMatrix();
 }
 new ResizeObserver(resize).observe(canvas);
